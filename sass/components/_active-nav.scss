@@ -1,0 +1,16 @@
+.active {
+  color: var(--main-color);
+
+  @include tablet {
+    &::after {
+      display: block;
+      content: '';
+      background-color: var(--main-color);
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      bottom: -1px;
+      border-radius: 2px;
+    }
+  }
+}

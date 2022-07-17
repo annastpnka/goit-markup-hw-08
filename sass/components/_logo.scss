@@ -1,0 +1,24 @@
+.logo-link {
+  display: inline-block;
+  @include font(700, 26px, 31px);
+  font-family: var(--logo-font);
+
+  & > .logo-link_color_main {
+    color: var(--main-color);
+  }
+}
+.logo-main {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include tablet {
+    margin-right: 84px;
+  }
+  @include desktop {
+    margin-right: 92px;
+  }
+}
+.logo-footer {
+  color: var(--standart-white);
+  text-align: center;
+}

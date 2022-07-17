@@ -1,0 +1,36 @@
+.clients-icon-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clients-link {
+  @extend %flex-standart;
+  width: 210px;
+  height: 92px;
+  border: 1px solid var(--clients-and-command-icons);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: var(--main-color);
+  }
+
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
+  }
+}
+.clients-icon {
+  fill: var(--clients-and-command-icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--main-color);
+  }
+}

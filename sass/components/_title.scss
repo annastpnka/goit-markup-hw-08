@@ -1,0 +1,27 @@
+.hero-title {
+  @include font(900, 26px, 42px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--standart-white);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    @include font(900, 44px, 60px);
+    max-width: 696px;
+  }
+}
+.title {
+  @include font(700, 36px, 42px);
+  text-align: center;
+}
+.title_margin-b {
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}

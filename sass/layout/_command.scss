@@ -1,0 +1,72 @@
+.command-list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.command-list__item {
+  display: block;
+  background-color: var(--standart-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    max-width: 354px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
+}
+.command-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.command-name__subtitle {
+  @include font(500, 16px, 19px);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.command-name__text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--second-color);
+  margin-bottom: 16px;
+}
+.command-icon-list {
+  @extend %flex-standart;
+  gap: 10px;
+}
+.command-icon-list__link {
+  @extend %flex-standart;
+  background-color: var(--standart-white);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+    cursor: pointer;
+  }
+}
+.command-icon-list__icon {
+  fill: var(--clients-and-command-icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .command-icon-list__link:hover &,
+  .command-icon-list__link:focus & {
+    fill: var(--standart-white);
+  }
+}
