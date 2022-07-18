@@ -25,6 +25,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--standart-white);
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-form {
   padding: 40px;
@@ -49,11 +54,15 @@
   }
 }
 .modal-form-title {
-  @include font(700, 20px, 23px);
+  @include font(700, 20px, 1.5);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--lite-black);
+
+  @include desktop {
+    line-height: 1.2;
+  }
 }
 .modal-form-field {
   display: block;
@@ -98,7 +107,11 @@
 }
 .modal-form-field-com {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 15px;
+  }
 }
 .textarea-form-input {
   resize: none;
@@ -123,7 +136,7 @@
 }
 .policy-checkbox-text {
   @extend %flex-standart;
-  @include font(null, 12px, 14px);
+  @include font(null, 12px, 1.16);
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 30px;
@@ -151,6 +164,10 @@
       outline: 2px solid var(--main-color);
     }
   }
+
+  @include desktop {
+    @include font(400, 14px, 1.7);
+  }
 }
 .policy-modal-text {
   padding-top: 2px;
@@ -161,9 +178,13 @@
 .policy-checkbox-link-class {
   border-bottom: 1px solid var(--main-color);
   padding-top: 2px;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 .button-submit-input {
-  @include font(700, 16px, 30px);
+  @include font(700, 16px, 1.875);
   display: block;
   margin: 0 auto;
   width: 200px;

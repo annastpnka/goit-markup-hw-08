@@ -31,7 +31,11 @@
   }
 }
 .address-list {
-  margin-top: 10px;
+  margin-top: 8px;
+
+  @include desktop {
+    margin-top: 10px;
+  }
 }
 .address-item:not(:first-child) {
   margin-top: 8px;
@@ -51,6 +55,7 @@
   font-size: 14px;
   line-height: 1.7;
   color: var(--standart-white);
+  letter-spacing: 0.03em;
 }
 .footer-icon {
   margin-top: 60px;
@@ -82,7 +87,7 @@
   margin-top: 20px;
 }
 .footer-text {
-  @include font(700, 14px, 16px);
+  @include font(700, 14px, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--standart-white);
@@ -140,7 +145,7 @@
 }
 .subscribe-btn-footer {
   @extend %flex-standart;
-  @include font(700, 16px, 30px);
+  @include font(700, 16px, 1.1875);
   padding: 0;
   width: 200px;
   height: 50px;

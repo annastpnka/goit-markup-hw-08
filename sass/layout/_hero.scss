@@ -33,7 +33,7 @@
 }
 .hero-button {
   display: block;
-  @include font(700, 16px, 30px);
+  @include font(700, 16px, 1.875);
   text-align: center;
   letter-spacing: 0.06em;
   font-family: var(--main-font);

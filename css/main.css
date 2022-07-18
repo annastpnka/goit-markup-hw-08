@@ -74,7 +74,7 @@ img {
 .hero-title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.6153846154;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -88,16 +88,22 @@ img {
   .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3636363636;
+    line-height: 1.36;
     max-width: 696px;
   }
 }
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .title_margin-b {
@@ -174,12 +180,18 @@ img {
 .logo-link {
   display: inline-block;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.16;
   font-family: var(--logo-font);
 }
 .logo-link > .logo-link_color_main {
   color: var(--main-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .logo-main {
@@ -228,6 +240,12 @@ img {
   border-radius: 4px;
   background-color: var(--standart-white);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-form {
   padding: 40px;
@@ -253,11 +271,16 @@ img {
 .modal-form-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--lite-black);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    line-height: 1.2;
+  }
 }
 
 .modal-form-field {
@@ -306,7 +329,12 @@ img {
 
 .modal-form-field-com {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-field-com {
+    margin-bottom: 15px;
+  }
 }
 
 .textarea-form-input {
@@ -333,7 +361,7 @@ img {
 
 .policy-checkbox-text {
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 30px;
@@ -359,6 +387,13 @@ img {
 .policy-checkbox-input:focus + .policy-checkbox-text::before {
   outline: 2px solid var(--main-color);
 }
+@media screen and (min-width: 1200px) {
+  .policy-checkbox-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .policy-modal-text {
   padding-top: 2px;
@@ -371,6 +406,11 @@ img {
 .policy-checkbox-link-class {
   border-bottom: 1px solid var(--main-color);
   padding-top: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .policy-checkbox-link-class {
+    padding: 0;
+  }
 }
 
 .button-submit-input {
@@ -407,6 +447,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  letter-spacing: 0.03em;
   font-family: inherit;
   text-align: center;
   cursor: pointer;
@@ -499,7 +540,7 @@ img {
 .all-subtitle {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
   letter-spacing: 0.06em;
 }
 
@@ -557,12 +598,14 @@ img {
 }
 
 .button-menu {
-  padding: 11px;
   border: none;
   border-color: transparent;
   background-color: transparent;
 }
 
+.button-menu-open {
+  padding: 10px 8px;
+}
 @media screen and (min-width: 768px) {
   .button-menu-open {
     display: none;
@@ -586,6 +629,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: 15px;
+  padding: 8.5px 10.5px;
 }
 .button-menu-close:hover, .button-menu-close:focus {
   fill: var(--main-color);
@@ -616,7 +660,7 @@ img {
 .contacts-mob-link-tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.1764705882;
+  line-height: 1.176;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -628,7 +672,7 @@ img {
 .contacts-mob-link-mail {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.1666666667;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
@@ -642,7 +686,7 @@ img {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.2222222222;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
   padding-right: 10px;
@@ -675,7 +719,7 @@ img {
     display: block;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1428571429;
+    line-height: 1.14;
     letter-spacing: 0.02em;
   }
 }
@@ -739,7 +783,7 @@ img {
     display: flex;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.1666666667;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--second-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -753,7 +797,18 @@ img {
   .contacts-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1428571429;
+    line-height: 1.14;
+  }
+}
+
+.icon-contacts {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .icon-contacts {
+    display: block;
+    margin-right: 10px;
+    fill: var(--second-color);
   }
 }
 
@@ -764,19 +819,6 @@ img {
 @media screen and (min-width: 1200px) {
   .icon-contacts-tab {
     display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .icon-contacts {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .icon-contacts {
-    display: block;
-    margin-right: 10px;
-    fill: var(--second-color);
   }
 }
 
@@ -887,7 +929,7 @@ img {
 .subtitle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
@@ -924,7 +966,7 @@ img {
 .intro-text-overlay {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--standart-white);
@@ -1094,7 +1136,12 @@ img {
 }
 
 .address-list {
-  margin-top: 10px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    margin-top: 10px;
+  }
 }
 
 .address-item:not(:first-child) {
@@ -1115,6 +1162,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: var(--standart-white);
+  letter-spacing: 0.03em;
 }
 
 .footer-icon {
@@ -1157,7 +1205,7 @@ img {
 .footer-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571429;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--standart-white);
@@ -1219,7 +1267,7 @@ img {
 .subscribe-btn-footer {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.1875;
   padding: 0;
   width: 200px;
   height: 50px;
