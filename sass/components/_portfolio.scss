@@ -43,6 +43,18 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    max-width: 354px;
+  }
+
+  @include desktop {
+    max-width: 370px;
+  }
 }
 .portfolio-img-link {
   display: flex;
@@ -90,9 +102,6 @@
   border-right: 1px solid var(--poster-bg-color);
   flex-grow: 1;
 
-  @include tablet {
-    max-width: 354px;
-  }
   @include desktop {
     max-width: 370px;
   }

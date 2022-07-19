@@ -17,6 +17,9 @@
     justify-content: space-between;
     align-items: baseline;
   }
+  @include desktop {
+    margin-right: auto;
+  }
 }
 .address {
   margin-top: 20px;
@@ -65,7 +68,7 @@
     margin-right: 74px;
   }
   @include desktop {
-    margin-right: 92px;
+    margin-right: 0;
   }
 }
 .footer-form-wrapper {
@@ -73,6 +76,9 @@
 
   @include tablet {
     margin-top: 60px;
+  }
+  @include desktop {
+    margin-top: 0;
   }
 }
 .footer-form {
