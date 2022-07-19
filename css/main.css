@@ -833,7 +833,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts-link-tel {
-    padding-bottom: 0;
+    padding: 32px 0;
   }
 }
 
@@ -846,7 +846,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts-link-envelope {
     margin-bottom: 0;
-    padding-top: 0;
+    padding: 32px 0;
   }
 }
 
@@ -940,18 +940,23 @@ img {
   }
 }
 
-.icons-list__item {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .icons-list__item {
-    margin-bottom: 0;
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .icons-list__item {
     width: 270px;
+  }
+}
+
+.icons-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .icons-list__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -1057,13 +1062,11 @@ img {
 @media screen and (min-width: 768px) {
   .command-list__item {
     max-width: 354px;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .command-list__item {
     max-width: 270px;
-    margin-bottom: 0;
   }
 }
 

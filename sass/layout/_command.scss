@@ -27,11 +27,9 @@
 
   @include tablet {
     max-width: 354px;
-    margin-bottom: 0;
   }
   @include desktop {
     max-width: 270px;
-    margin-bottom: 0;
   }
 }
 .command-name {
