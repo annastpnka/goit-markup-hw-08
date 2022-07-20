@@ -26,10 +26,10 @@
 }
 .footer-address {
   @include tablet {
-    margin-left: 60px;
+    padding-left: 60px;
   }
   @include desktop {
-    margin-left: 0;
+    padding-left: 0;
     margin-right: 60px;
   }
 }
@@ -65,7 +65,7 @@
 
   @include tablet {
     margin-top: 0;
-    margin-right: 74px;
+    padding-right: 74px;
   }
   @include desktop {
     margin-right: 0;

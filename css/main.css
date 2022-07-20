@@ -1186,12 +1186,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-address {
-    margin-left: 60px;
+    padding-left: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-address {
-    margin-left: 0;
+    padding-left: 0;
     margin-right: 60px;
   }
 }
@@ -1232,7 +1232,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer-icon {
     margin-top: 0;
-    margin-right: 74px;
+    padding-right: 74px;
   }
 }
 @media screen and (min-width: 1200px) {
